@@ -10,7 +10,9 @@ Agustín Carlos Lort
 * Descripción: Esta app será un símil Netflix en el marco del Trabajo Grupal del curso React de Codo a Codo.
 
 * Link de la Aplicación:
-https://react-film-2023-rust.vercel.app/ 
+    QA > https://qa-react-films.vercel.app/
+    UAT > https://uat-react-films.vercel.app/
+    PROD > https://react-film-2023-rust.vercel.app/
 
 * Otros Links útiles:
 
