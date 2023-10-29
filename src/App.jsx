@@ -4,7 +4,7 @@ const App = () => {
   return (
     <div>
       <h1>App React Film</h1>
-      <h2>Prueba Deploy</h2>
+      <h2>ESTO ES PARA QUE EL CLIENTE PRUEBE</h2>
       </div>
   )
 }
