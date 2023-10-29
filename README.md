@@ -1,6 +1,6 @@
 # React + Vite
 
-* Comisión:  23646
+* Comisión:  23646 tarde
 
 * Integrantes:
 Lucas Nicolás Burghi Murayama
