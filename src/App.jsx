@@ -1,8 +1,12 @@
 import React from 'react'
+import login from "../components/log-in/login"
+import signup from '../components/sign-up/signup'
 
 const App = () => {
   return (
-    <div>App React Film 2023</div>
+    <>
+    
+    </>
   )
 }
 
