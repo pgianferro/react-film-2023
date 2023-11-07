@@ -3,6 +3,7 @@ import React from 'react';
 export default function Login() {
     return (
         <div className="relative flex flex-col justify-center min-h-screen overflow-hidden">
+            <link href="/dist/output.css" rel="stylesheet"></link>
             <div className="w-full p-6 m-auto bg-white rounded-md shadow-xl shadow-rose-600/40 ring ring-2 ring-purple-600 lg:max-w-xl">
                 <h1 className="text-3xl font-semibold text-center text-purple-700 underline uppercase decoration-wavy">
                 Sign in
