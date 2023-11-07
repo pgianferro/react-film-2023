@@ -1,11 +1,12 @@
 import React from 'react'
+import login from "../components/log-in/login"
+import signup from '../components/sign-up/signup'
 
 const App = () => {
   return (
-    <div>
-      <h1>App React Film</h1>
-      <h2>ESTO ES QA</h2>
-      </div>
+    <>
+    
+    </>
   )
 }
 

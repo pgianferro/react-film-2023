@@ -1,6 +1,6 @@
 # React + Vite
 
-* Comisión:  23646
+* Comisión:  23646 tarde
 
 * Integrantes:
 Lucas Nicolás Burghi Murayama
@@ -10,7 +10,9 @@ Agustín Carlos Lort
 * Descripción: Esta app será un símil Netflix en el marco del Trabajo Grupal del curso React de Codo a Codo.
 
 * Link de la Aplicación:
-https://react-film-2023-rust.vercel.app/ 
+    QA > https://qa-react-films.vercel.app/
+    UAT > https://uat-react-films.vercel.app/
+    PROD > https://react-film-2023-rust.vercel.app/
 
 * Otros Links útiles:
 
@@ -28,3 +30,18 @@ https://react-film-2023-rust.vercel.app/
     Env Variables and Modes
     https://vitejs.dev/guide/env-and-mode.html
 
+*Todo lo realizado al momento
+
+CREAMOS EL PROYECTO DE REACT CON VITE
+INSTALAMOS LAS DEPENDENCIAS DE TESTING
+CREAMOS EL REPO EN GITHUB
+CREAMOS EL PROYECTO EN VERCEL
+GENERAR EL TOKEN DE VERCEL
+INSTALAMOS EL CLI VERCEL
+LOGIN EN VERCEL (CLI)
+LINKEAMOS EL PROYECTO EN VERCEL
+CREAMOS RAMAS EN GITHUB
+CONFIGURAMOS EL PROYECTO EN VERCEL (CREANDO 3 DOMINIOS Y EVITANDO EL AUTO DEPLOY)
+CONFIGURAMOS LAS VARIABLES DE ENTORNO EN GITHUB
+CREAMOS LA CARPETA .GITHUB y LOS PIPELINES PARA LAS ACTIONS
+IGUALAMOS LOS REPOSITORIOS EN TODOS LOS ENTORNOS PARA QUE ESTEN IGUALES
