@@ -9,6 +9,7 @@ import Login from '../components/log_in/Login'
 const App = () => {
   return (
     <div>
+      <Login></Login>
       <NetflixNavbar></NetflixNavbar>
       <NetflixImage></NetflixImage>
       <Spacer y={10} ></Spacer>
