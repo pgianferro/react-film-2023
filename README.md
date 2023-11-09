@@ -28,3 +28,11 @@ https://react-film-2023-rust.vercel.app/
     Env Variables and Modes
     https://vitejs.dev/guide/env-and-mode.html
 
+* API
+    https://developer.themoviedb.org/docs 
+    Username: pgianferro
+    Pass: reactfilm2023
+
+* Para hacer forms
+
+https://formik.org/
