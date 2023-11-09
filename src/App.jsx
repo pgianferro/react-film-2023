@@ -1,8 +1,8 @@
 import React from 'react'
-import NetflixNavbar from './NetflixNavbar.jsx'
-import NetflixImage from './NetflixImage.jsx'
-import NetflixCards from './NetflixCards.jsx' 
-import NetflixHeader from './NetflixHeader.jsx'
+import NetflixNavbar from '../components/netflixnavbar/NetflixNavbar.jsx'
+import NetflixImage from '../components/netfliximage/NetflixImage.jsx'
+import NetflixCards from '../components/netflixcards/NetflixCards.jsx' 
+import NetflixHeader from '../components/netflixheader/NetflixHeader.jsx'
 import { Divider, Spacer } from '@nextui-org/react'
 
 const App = () => {
