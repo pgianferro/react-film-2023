@@ -1,8 +1,12 @@
 import React from 'react'
+import {RouterProvider} from "react-router-dom";
+import { appRouter } from './core/routes/app.router';
 
 const App = () => {
   return (
-    <div>App React Film 2023</div>
+    <>
+    <RouterProvider router={appRouter}/>
+    </>
   )
 }
 
