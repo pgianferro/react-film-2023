@@ -30,6 +30,14 @@ Agustín Carlos Lort
     Env Variables and Modes
     https://vitejs.dev/guide/env-and-mode.html
 
+* API
+    https://developer.themoviedb.org/docs 
+    Username: pgianferro
+    Pass: reactfilm2023
+
+* Para hacer forms
+https://formik.org/
+
 *Todo lo realizado al momento
 
 CREAMOS EL PROYECTO DE REACT CON VITE
@@ -44,11 +52,5 @@ CREAMOS RAMAS EN GITHUB
 CONFIGURAMOS EL PROYECTO EN VERCEL (CREANDO 3 DOMINIOS Y EVITANDO EL AUTO DEPLOY)
 CONFIGURAMOS LAS VARIABLES DE ENTORNO EN GITHUB
 CREAMOS LA CARPETA .GITHUB y LOS PIPELINES PARA LAS ACTIONS
-IGUALAMOS LOS REPOSITORIOS EN TODOS LOS ENTORNOS PARA QUE ESTEN IGUALES* API
-    https://developer.themoviedb.org/docs 
-    Username: pgianferro
-    Pass: reactfilm2023
+IGUALAMOS LOS REPOSITORIOS EN TODOS LOS ENTORNOS PARA QUE ESTEN IGUALES
 
-* Para hacer forms
-
-https://formik.org/
