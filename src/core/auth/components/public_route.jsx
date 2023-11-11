@@ -1,15 +1,13 @@
-import React from 'react'
-import { Navigate } from 'react-router-dom'
 import { useAuth } from '../hook/use_auth'
+import { Navigate } from 'react-router-dom'
 
 const PublicRoute = ({children}) => {
 
-    const  { isLoggedin } = useAuth();
+    const  { isLoggedIn } = useAuth();
 
-    if (!isLoggedin) return children;
+    if (isLoggedIn) return <Navigate to={"/"}/>;
 
-    return <Navigate to={"/"}/>
+    return children;
 
 }
-
 export default PublicRoute
