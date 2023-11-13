@@ -29,12 +29,12 @@ export const AuthProvider = ({ children }) => {
   const login = async (email, password) => {
 
     //en lugar de hacer axios.get o axios.post llamamos a la api centralizada
-    const response = await authApi.post("/login", {
-      email,
-      password,
-    });
+    // const response = await authApi.post("/login", {
+    //   email,
+    //   password,
+    // });
 
-    console.log(response.data);
+    // console.log(response.data);
 
     setIsLoggedIn(true);
     saveLoginState(true);
