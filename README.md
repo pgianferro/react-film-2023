@@ -5,7 +5,6 @@
 * Integrantes:
 Lucas Nicolás Burghi Murayama
 Pablo Daniel Gianferro
-Agustín Carlos Lort
 
 * Descripción: Esta app será un símil Netflix en el marco del Trabajo Grupal del curso React de Codo a Codo.
 
@@ -30,18 +29,32 @@ Agustín Carlos Lort
     Env Variables and Modes
     https://vitejs.dev/guide/env-and-mode.html
 
-*Todo lo realizado al momento
+* Todo lo realizado al momento
 
-CREAMOS EL PROYECTO DE REACT CON VITE
-INSTALAMOS LAS DEPENDENCIAS DE TESTING
-CREAMOS EL REPO EN GITHUB
-CREAMOS EL PROYECTO EN VERCEL
-GENERAR EL TOKEN DE VERCEL
-INSTALAMOS EL CLI VERCEL
-LOGIN EN VERCEL (CLI)
-LINKEAMOS EL PROYECTO EN VERCEL
-CREAMOS RAMAS EN GITHUB
-CONFIGURAMOS EL PROYECTO EN VERCEL (CREANDO 3 DOMINIOS Y EVITANDO EL AUTO DEPLOY)
-CONFIGURAMOS LAS VARIABLES DE ENTORNO EN GITHUB
-CREAMOS LA CARPETA .GITHUB y LOS PIPELINES PARA LAS ACTIONS
-IGUALAMOS LOS REPOSITORIOS EN TODOS LOS ENTORNOS PARA QUE ESTEN IGUALES
+- 1. CREAMOS EL PROYECTO DE REACT CON VITE
+- 2. INSTALAMOS LAS DEPENDENCIAS DE TESTING
+- 3. CREAMOS EL REPO EN GITHUB
+- 4. CREAMOS EL PROYECTO EN VERCEL
+- 5. GENERAR EL TOKEN DE VERCEL
+- 6. INSTALAMOS EL CLI VERCEL
+- 7. LOGIN EN VERCEL (CLI)
+- 8. LINKEAMOS EL PROYECTO EN VERCEL
+- 9. CREAMOS RAMAS EN GITHUB
+- 10. CONFIGURAMOS EL PROYECTO EN VERCEL (CREANDO 3 DOMINIOS Y EVITANDO EL AUTO DEPLOY)
+- 11. CONFIGURAMOS LAS VARIABLES DE ENTORNO EN GITHUB
+- 12. CREAMOS LA CARPETA .GITHUB y LOS PIPELINES PARA LAS ACTIONS
+- 13. IGUALAMOS LOS REPOSITORIOS EN TODOS LOS ENTORNOS PARA QUE ESTEN IGUALES
+
+* Instalar Next UI para vite: https://nextui.org/docs/frameworks/vite 
+* Instalar Tailwind para vite: https://tailwindcss.com/docs/guides/vite#react
+
+Pasos:
+npm i @nextui-org/react framer-motion
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+Add the paths to all of your template files in your tailwind.config.js file.
+Add the Tailwind directives to your CSS
+After installing NextUI, you need to set up the NextUIProvider at the root of your application.
+
+* Armado del Slider:
+https://levelup.gitconnected.com/how-to-implement-netflix-slider-with-react-and-hooks-bdb9b99d1ce4
