@@ -6,6 +6,7 @@ import NetflixImage from './netflix_image.jsx'
 import NetflixHeader from './netflix_header.jsx'
 import NetflixCards from './netflix_cards.jsx' 
 import { Divider, Spacer } from '@nextui-org/react'
+import MovieCard2 from "./netflix_cards2.jsx";
 
 export default function Homeview2() {
   const { logout } = useAuth();
@@ -26,7 +27,8 @@ export default function Homeview2() {
       <Spacer y={10} ></Spacer>
       <NetflixHeader></NetflixHeader>
       <Divider className="my-4" />
-      <NetflixCards></NetflixCards>
+      {/* <NetflixCards></NetflixCards> */}
+      <MovieCard2></MovieCard2>
       <Spacer y={10} ></Spacer>
     </>
   );
