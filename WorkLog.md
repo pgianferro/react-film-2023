@@ -14,3 +14,5 @@ me faltó conectar el nuevo botón login para volver al home, porque ahora es un
 
 16/11/2023 Lucas: Hola, son las 22:55 y al fin pude hacer que el botón llamado "buttonTest" logre funcionar en el "login_view2", te pido mil disculpas si lo encontras muy desordenado, me costó bastante. Lo emprolijaré apenas pueda.
 
+17/11/2023 Pablo: Trabajé la sección hero para que muestre videos al azar al inicio.
+
