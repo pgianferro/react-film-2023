@@ -11,3 +11,6 @@ Rearmé la vista home con los componentes navbar, hero (image), header, cards (s
 16/11/2023 Lucas: Agregué una sección para "Suscription", agregué una sección para botones para tratar de 
 hacerlo más átomico (Es solo una prueba lo de la sección de botones), estuve personalizando el login
 me faltó conectar el nuevo botón login para volver al home, porque ahora es un componente.
+
+16/11/2023 Lucas: Hola, son las 22:55 y al fin pude hacer que el botón llamado "buttonTest" logre funcionar en el "login_view2", te pido mil disculpas si lo encontras muy desordenado, me costó bastante. Lo emprolijaré apenas pueda.
+

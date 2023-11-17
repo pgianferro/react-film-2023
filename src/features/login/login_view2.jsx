@@ -1,13 +1,38 @@
 import React, {useState} from 'react'
 import { useAuth } from '../../core/auth/hook/use_auth'
 import {Input} from "@nextui-org/react";
-import ButtonLogin from '../login/button/loginbutton/buttonlogin'
+import ButtonTest from "./button/loginbutton/buttonTest";
 
 const LoginView2 = () => {
-  const {login} = useAuth();
 
+  const {login} = useAuth();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setIsLoading(true);
+    try {      
+      //Capturar los datos del form en un objeto con la propiedad fromEntries
+      const form = e.target;
+      const formData = new FormData(form);
+      const {email, password} = Object.fromEntries(formData);
+      
+      //Capturar los datos del form como arriba en una sóla línea
+      //const {email,password} = Object.fromEntries(new FormData(e.target))
+
+      form.reset();
+
+      await login(email,password)
+    } catch (error) {
+      console.log();
+      setError(error.response.data.msg)
+    } finally {
+      setIsLoading(false)
+    }
+  };
+
 
   const placements = [
     "inside"
@@ -41,7 +66,7 @@ const LoginView2 = () => {
       <div className="flex h-screen items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-md w-96">
         <h3 className="text-default-500 text-small">Inicia sesión</h3>
-        <form action="">
+        <form action="" onSubmit={handleSubmit}>
         <div /* className="flex w-full flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4" */>
           {placements.map((placement) => (
             <Input
@@ -61,9 +86,8 @@ const LoginView2 = () => {
             placeholder="Ingresa tu contraseña"
             required
           />
-          <ButtonLogin type="submit" className="mt-4">
-            Iniciar sesión
-          </ButtonLogin>
+          <ButtonTest></ButtonTest>
+          
         </div>
         </form>
         <div className="mt-6 text-sm text-gray-500">
