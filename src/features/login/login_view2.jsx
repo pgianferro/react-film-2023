@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import { useAuth } from '../../core/auth/hook/use_auth'
 import {Input} from "@nextui-org/react";
 import ButtonTest from "./button/loginbutton/buttonTest";
+import Suscbutton from '../suscription/suscbutton/suscbutton';
 
 const LoginView2 = () => {
 
@@ -87,14 +88,11 @@ const LoginView2 = () => {
             required
           />
           <ButtonTest></ButtonTest>
-          
         </div>
         </form>
         <div className="mt-6 text-sm text-gray-500">
-          ¿Primera vez en Netflix?{' '}
-          {/* <Link href="#">Suscríbete ahora.</Link> */}
+        <Suscbutton></Suscbutton>
         </div>
-
         <div className="mt-4 text-xs text-gray-500">
           Esta página está protegida por Google reCAPTCHA para comprobar que no
           eres un robot.{' '}
