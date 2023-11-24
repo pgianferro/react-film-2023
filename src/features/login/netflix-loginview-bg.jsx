@@ -1,12 +1,12 @@
-import React from 'react'
-import { Image } from "@nextui-org/react"
+import React from 'react';
 
-
-export default function Netflixloginviewbg () {
+export default function Netflixloginviewbg() {
     return (
-        <Image
-            alt="NextUI hero Image"
-            src="../public/netflixlogbg.jpg"
-        />
+        <div
+            className="bg-cover bg-center w-full h-full absolute z-0"
+            style={{
+                backgroundImage: `url('../public/NetflixBG.jpeg')`, // Reemplaza con la ruta correcta de tu imagen
+            }}
+        ></div>
     );
 }

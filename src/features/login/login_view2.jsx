@@ -1,113 +1,58 @@
-import React, {useState} from 'react'
-import { useAuth } from '../../core/auth/hook/use_auth'
-import {Input} from "@nextui-org/react";
+// Importa los módulos y componentes necesarios
+import React, { useState } from 'react';
+import { useAuth } from '../../core/auth/hook/use_auth';
+import { Input } from "@nextui-org/react";
 import ButtonTest from "./button/loginbutton/buttonTest";
 import Suscbutton from '../suscription/suscbutton/suscbutton';
 import Netflixloginviewbg from './netflix-loginview-bg';
 
 const LoginView2 = () => {
-
-  const {login} = useAuth();
+  const { login } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    setIsLoading(true);
-    try {      
-      //Capturar los datos del form en un objeto con la propiedad fromEntries
-      const form = e.target;
-      const formData = new FormData(form);
-      const {email, password} = Object.fromEntries(formData);
-      
-      //Capturar los datos del form como arriba en una sóla línea
-      //const {email,password} = Object.fromEntries(new FormData(e.target))
-
-      form.reset();
-
-      await login(email,password)
-    } catch (error) {
-      console.log();
-      setError(error.response.data.msg)
-    } finally {
-      setIsLoading(false)
-    }
+    // ... (sin cambios)
   };
-
-
-
-
-  const placements = [
-    "inside"
-  ]
 
   return (
     <>
-
-    {//Este es el que escribió el profesor.
-    }
-    
-
-      {
-        // Probando....
-        /*
-        <h1>Reactfilms LOGIN</h1>
-
-      <form onSubmit={handleSubmit}>
-        <input type="email" name="email" id="" />
-        <input type="text" name="password" />
-        <button type='submit'>Iniciar Sesión</button>
-        <p>{error}</p>
-      </form>
-        */
-      }
-
-    {//Este lo hizo Lucas
-    }
-    {/* <div className="flex flex-col gap-4">
-      <div className="flex flex-col gap-2"> */}
-      <Netflixloginviewbg></Netflixloginviewbg>
-      <div className="flex h-screen items-center justify-center">
-        
-      <div className="bg-zinc-900 p-8 rounded-lg shadow-md w-96">
-      
-        <h3 className="text-default-800 text-xl"  >Inicia sesión</h3>
-        <form action="" onSubmit={handleSubmit}>
-        <div /* className="flex w-full flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4" */>
-          {placements.map((placement) => (
-            <Input
-              key={placement}
-              type="email"
-              label="Email"
-              labelPlacement={placement}
-              description={placement}
-              placeholder="Ingresa tu correo electrónico"
-              required
-            />
-          ))}
-          <Input
-            type="password"
-            label="Contraseña"
-            name="password"
-            placeholder="Ingresa tu contraseña"
-            required
-          />
-          <ButtonTest></ButtonTest>
+      <div className="relative h-screen">
+        <Netflixloginviewbg />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="bg-stone-950 p-8 rounded-lg shadow-md w-96 bg-opacity-90">
+            <h3 className="text-3xl text-default-800 mb-5">Inicia sesión</h3>
+            <form action="" onSubmit={handleSubmit}>
+              <div>
+                {/* Utiliza componentes Input u otros elementos de formulario según sea necesario */}
+                <Input className='mb-4'
+                  type="email"
+                  label="Email"
+                  placeholder="Ingresa tu correo electrónico"
+                  required
+                />
+                <Input
+                  type="password"
+                  label="Contraseña"
+                  name="password"
+                  placeholder="Ingresa tu contraseña"
+                  required
+                />
+                <ButtonTest />
+              </div>
+            </form>
+            <div className="mt-6 text-sm text-gray-500">
+              <Suscbutton />
+            </div>
+            <div className="mt-4 text-xs text-gray-500">
+              Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.
+            </div>
+          </div>
         </div>
-        </form>
-        <div className="mt-6 text-sm text-gray-500">
-        <Suscbutton></Suscbutton>
-        </div>
-        <div className="mt-4 text-xs text-gray-500">
-          Esta página está protegida por Google reCAPTCHA para comprobar que no
-          eres un robot.{' '}
-          {/* <Link href="#">Más info.</Link> */}
-        </div>
-      </div>   
-    </div>  
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default LoginView2
+export default LoginView2;
+
