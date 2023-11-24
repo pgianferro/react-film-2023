@@ -3,6 +3,7 @@ import { useAuth } from '../../core/auth/hook/use_auth'
 import {Input} from "@nextui-org/react";
 import ButtonTest from "./button/loginbutton/buttonTest";
 import Suscbutton from '../suscription/suscbutton/suscbutton';
+import Netflixloginviewbg from './netflix-loginview-bg';
 
 const LoginView2 = () => {
 
@@ -35,6 +36,8 @@ const LoginView2 = () => {
   };
 
 
+
+
   const placements = [
     "inside"
   ]
@@ -64,9 +67,12 @@ const LoginView2 = () => {
     }
     {/* <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-2"> */}
+      <Netflixloginviewbg></Netflixloginviewbg>
       <div className="flex h-screen items-center justify-center">
-      <div className="bg-white p-8 rounded-lg shadow-md w-96">
-        <h3 className="text-default-500 text-small">Inicia sesión</h3>
+        
+      <div className="bg-zinc-900 p-8 rounded-lg shadow-md w-96">
+      
+        <h3 className="text-default-800 text-xl"  >Inicia sesión</h3>
         <form action="" onSubmit={handleSubmit}>
         <div /* className="flex w-full flex-wrap items-end md:flex-nowrap mb-6 md:mb-0 gap-4" */>
           {placements.map((placement) => (
