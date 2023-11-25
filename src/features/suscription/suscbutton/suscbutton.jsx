@@ -1,18 +1,18 @@
 
-import React from 'react';
+import Suschome from '../suschome/suschome';
+import React, { useState } from 'react';
+import { useAuth } from '../../../core/auth/hook/use_auth';
+import { Navigate } from 'react-router-dom'
 
-export default function Suscbutton() {
-    const redirectToSuscHome = () => {
-        // Coloca la URL correcta a la que quieres redirigir
-        window.location.href = '../suschome/suschome.jsx';
-    };
-
+export default function App() {
+    const { suscribe } = useAuth();
+   
     return (
         <div>
             ¿Primera vez en Netflix?
             <button
                 className='ml-1 text-default-800 relative overflow-hidden group'
-                onClick={redirectToSuscHome}
+                onClick={ <Navigate to={"../suschome/suschome.jsx"}/> }
             >
                 Suscríbete ahora!
                 <span className="absolute left-0 right-0 bottom-0 h-1 bg-white transition-transform transform scale-x-0 group-hover:scale-x-100"></span>
@@ -20,4 +20,3 @@ export default function Suscbutton() {
         </div>
     );
 }
-
