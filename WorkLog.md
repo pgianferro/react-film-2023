@@ -19,3 +19,5 @@ me faltó conectar el nuevo botón login para volver al home, porque ahora es un
 24/11/2023 Lucas: Sigo con el login, no conseguí la imagen de netflix original para colocar en la home, por lo que decidí utilizar otra más generica.
 
 24/11/2023 Lucas: Conseguí la imagen y lo pude reemplazar. Quedó joya. Es de peor calidad, pero se parece más al original 
+
+26/11/2023 Lucas: Estuve terminando algunos detalles del form del login, ahora estoy trabajando en la sección de información adicional en la parte inferior de Netflix.
