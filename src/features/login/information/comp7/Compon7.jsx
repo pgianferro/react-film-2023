@@ -1,9 +1,8 @@
+
 import React from 'react'
 
-const compo7 = () => {
+export default function Compon7() {
     return (
         <div>Información corporativa</div>
     )
 }
-
-export default compo7

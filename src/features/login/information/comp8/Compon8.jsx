@@ -1,6 +1,6 @@
 import React from 'react'
 
-const compo8 = () => {
+export default function Compon8() {
     return (
         <div>
             <div>
@@ -10,5 +10,3 @@ const compo8 = () => {
         </div>
     )
 }
-
-export default compo8

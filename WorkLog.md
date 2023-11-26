@@ -21,3 +21,5 @@ me faltó conectar el nuevo botón login para volver al home, porque ahora es un
 24/11/2023 Lucas: Conseguí la imagen y lo pude reemplazar. Quedó joya. Es de peor calidad, pero se parece más al original 
 
 26/11/2023 Lucas: Estuve terminando algunos detalles del form del login, ahora estoy trabajando en la sección de información adicional en la parte inferior de Netflix.
+
+26/11/2023 Lucas: Pude utilizar un barril para los 8 componentes que integran la parte inferior del Login, te recomiendo una extensión que se llama Auto Barrel, es muy útil.

@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Compo2 = () => {
+export default function Compon2() {
     return (
         <div>Preguntas frecuentes</div>
     )
 }
 
-export default Compo2
