@@ -6,6 +6,7 @@ import ButtonTest from "./button/loginbutton/buttonTest";
 import Suscbutton from '../suscription/suscbutton/suscbutton';
 import Netflixloginviewbg from './netflix-loginview-bg';
 import Remember from './button/options/remember';
+import InfoCompo from './information/informationpart/infoCompo';
 
 const LoginView2 = () => {
   const { login } = useAuth();
@@ -53,7 +54,7 @@ const LoginView2 = () => {
         </div>
         {/* Sección inferior, información extra. */} 
         <div>
-    
+          <InfoCompo></InfoCompo>
         </div>
       </div>
     </>
