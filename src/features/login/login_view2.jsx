@@ -1,6 +1,6 @@
 // Importa los módulos y componentes necesarios
 import React, { useState } from 'react';
-import { useAuth } from '../../core/auth/hook/use_auth';
+import { useAuth } from '../auth/hook/use_auth';
 import { Input } from "@nextui-org/react";
 import ButtonTest from "./button/loginbutton/buttonTest";
 import Suscbutton from '../suscription/suscbutton/suscbutton';

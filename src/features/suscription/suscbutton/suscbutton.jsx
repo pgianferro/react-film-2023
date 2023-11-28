@@ -1,7 +1,7 @@
 
 import Suschome from '../suschome/suschome';
 import React, { useState } from 'react';
-import { useAuth } from '../../../core/auth/hook/use_auth';
+import { useAuth } from '../../auth/hook/use_auth';
 
 export default function App() {
     const { suscribe } = useAuth();

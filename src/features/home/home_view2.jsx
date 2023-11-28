@@ -1,5 +1,5 @@
 import React from "react";
-import { useAuth } from "../../core/auth/hook/use_auth";
+import { useAuth } from "../auth/hook/use_auth.js";
 import { authApi } from "../../core/datasources/remote/auth/auth_api";
 import NetflixNavbar from './netflix_navbar.jsx'
 import NetflixImage from './netflix_image.jsx'
