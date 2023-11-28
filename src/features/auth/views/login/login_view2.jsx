@@ -1,9 +1,9 @@
 // Importa los módulos y componentes necesarios
 import React, { useState } from 'react';
-import { useAuth } from '../../core/auth/hook/use_auth';
+import { useAuth } from '../../hook/use_auth'
 import { Input } from "@nextui-org/react";
 import ButtonTest from "./button/loginbutton/buttonTest";
-import Suscbutton from '../suscription/suscbutton/suscbutton';
+import Suscbutton from '../../../suscription/suscbutton/suscbutton';
 import Netflixloginviewbg from './netflix-loginview-bg';
 import Remember from './button/options/remember';
 import InfoComponents from './information/informationpart/InfoComponents';
