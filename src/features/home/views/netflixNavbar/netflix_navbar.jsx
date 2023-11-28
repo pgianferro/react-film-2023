@@ -11,6 +11,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
+import * as index from '../navbarItems/navbarItemBarrel/index.js';
+
+
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function NetflixNavbar() {
@@ -18,19 +21,18 @@ export default function NetflixNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "Inicio",
+    "Series",
+    "Peliculas",
+    "Novedades populares",
+    "Mi lista",
+    "Explora por idiomas",
+    "Perfil",
+    "Notificaciones",
   ];
 
   return (
+    <>
       <Navbar onMenuOpenChange={setIsMenuOpen}>
         <NavbarContent>
           <NavbarMenuToggle
@@ -49,11 +51,7 @@ export default function NetflixNavbar() {
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
-          <NavbarItem>
-            <Link color="foreground" href="#">
-              Features
-            </Link>
-          </NavbarItem>
+          <index.Inicio></index.Inicio>
           <NavbarItem isActive>
             <Link href="#" aria-current="page">
               Customers
@@ -96,5 +94,6 @@ export default function NetflixNavbar() {
           ))}
         </NavbarMenu>
       </Navbar>
+    </>
   );
 }

@@ -21,7 +21,7 @@ import {
   Link,
 } from "@nextui-org/react";
 
-const App = () => {
+const NetflixBanner = () => {
   const videos = [
     "https://www.youtube.com/watch?v=dzQtWkpc2-c",
     "https://www.youtube.com/watch?v=zTY3ZskC99g",
@@ -70,19 +70,7 @@ const App = () => {
         Reproducir
       </Button>
     </section>
-
-    // <div>
-    //   <ReactPlayer
-    //     muted={true}
-    //     playing={true}
-    //     controls={false}
-    //     autoplay={true}
-    //     width='100%'
-    //     height={440}
-    //     url={randomVideo}
-    //   />
-    // </div>
   );
 };
 
-export default App;
+export default NetflixBanner;

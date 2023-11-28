@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
-import HomeView from "../../features/home/home_view";
-import HomeView2 from "../../features/home/home_view2";
+import HomeView from "../../features/home/backup/home_view";
+import HomeView2 from "../../features/home/views/homeView/home_view2";
 import LoginView from "../../features/auth/views/login/login_view";
 import LoginView2 from "../../features/auth/views/login/login_view2";
 import PrivateRoute from "../../features/auth/components/private_route";

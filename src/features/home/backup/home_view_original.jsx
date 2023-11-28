@@ -1,8 +1,8 @@
 import React from "react";
-import { useAuth } from "../auth/hook/use_auth.js";
-import { authApi } from "../../core/datasources/remote/auth/auth_api";
+import { useAuth } from "../../auth/hook/use_auth.js";
+import { authApi } from "../../../core/datasources/remote/auth/auth_api.js";
 
-const HomeView = () => {
+const HomeViewBackup = () => {
   const { logout } = useAuth();
 
   const getUser = async () => {

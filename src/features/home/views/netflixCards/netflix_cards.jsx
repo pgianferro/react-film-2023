@@ -25,7 +25,7 @@ import { Navigation } from "swiper/modules";
 
 const topRatedURL = "https://api.themoviedb.org/3/tv/top_rated";
 
-export default function MovieCard2() {
+export default function NetflixCards() {
   const list = [
     {
       title: "The Office",
