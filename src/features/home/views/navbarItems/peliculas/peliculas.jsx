@@ -1,8 +1,15 @@
 import React from 'react'
+import { NavbarItem, Link} from "@nextui-org/react";
 
 const Peliculas = () => {
   return (
-    <div>peliculas</div>
+    <div>
+      <NavbarItem>
+        <Link color="foreground" href="/">
+        Peliculas
+        </Link>
+      </NavbarItem>
+    </div>
   )
 }
 

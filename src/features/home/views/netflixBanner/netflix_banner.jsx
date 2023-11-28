@@ -67,7 +67,7 @@ const NetflixBanner = () => {
         variant="flat"
         className="text-white bg-[#E50914]"
       >
-        Reproducir
+        Ver ahora
       </Button>
     </section>
   );

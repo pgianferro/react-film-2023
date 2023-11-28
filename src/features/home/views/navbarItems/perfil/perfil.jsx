@@ -1,8 +1,15 @@
 import React from 'react'
+import { NavbarItem, Link} from "@nextui-org/react";
 
 const Perfil = () => {
   return (
-    <div>Perfil</div>
+    <div>
+      <NavbarItem>
+        <Link color="foreground" href="/">
+        Perfil
+        </Link>
+      </NavbarItem>
+    </div>
   )
 }
 

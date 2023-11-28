@@ -52,24 +52,20 @@ export default function NetflixNavbar() {
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
           <index.Inicio></index.Inicio>
-          <NavbarItem isActive>
-            <Link href="#" aria-current="page">
-              Customers
-            </Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Link color="foreground" href="#">
-              Integrations
-            </Link>
-          </NavbarItem>
+          <index.Series></index.Series>
+          <index.Peliculas></index.Peliculas>
+          <index.NovedadesPopulares></index.NovedadesPopulares>
+          <index.MiLista></index.MiLista>
+          <index.ExploraPorIdioma></index.ExploraPorIdioma>
         </NavbarContent>
+
         <NavbarContent justify="end">
           <NavbarItem className="hidden lg:flex">
-            <Link href="#">Login</Link>
+            <Link href="#">Get User</Link>
           </NavbarItem>
           <NavbarItem>
             <Button as={Link} color="primary" href="#" variant="flat">
-              Sign Up
+              Cerrar Sesión
             </Button>
           </NavbarItem>
         </NavbarContent>
@@ -81,7 +77,7 @@ export default function NetflixNavbar() {
                   index === 2
                     ? "primary"
                     : index === menuItems.length - 1
-                    ? "danger"
+                    ? "red"
                     : "foreground"
                 }
                 className="w-full"
