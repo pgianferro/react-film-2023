@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { AuthContext } from "../context/auth_context";
-import { AppStorage } from '../../../core/base/app_storage'
-import { authApi } from '../../../core/datasources/remote/auth/auth_api'
+import { AppStorage } from "../../../core/base/app_storage";
+import { authApi } from "../../../core/datasources/remote/auth/auth_api";
 
 export const AUTH_KEY = "isLoggedIn";
 
