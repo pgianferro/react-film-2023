@@ -23,3 +23,13 @@ me faltó conectar el nuevo botón login para volver al home, porque ahora es un
 26/11/2023 Lucas: Estuve terminando algunos detalles del form del login, ahora estoy trabajando en la sección de información adicional en la parte inferior de Netflix.
 
 26/11/2023 Lucas: Pude utilizar un barril para los 8 componentes que integran la parte inferior del Login, te recomiendo una extensión que se llama Auto Barrel, es muy útil.
+
+30/11/2023 Pablo: 
+Trabajos en la Navbar: 
+agregado de íconos perfil y notificaciones, 
+armado de sus componentes en navbaritems e integración en navbar. 
+Funcionalidad cerrar sesión en foto de perfil
+Trabajos Sección Banner:
+Agrandado full width y height, posicionamiento de fondo de la navbar y carrousel de series. Agregado de Título y Botón. Resta trabajar estilos para tablet y mobile.
+Trabajos sección Swiper:
+Se integró el componente trabajado en clase, pero también hay que trabajr el estilo de tablet y mobile. Y sino seguir con el componente de nextUI trabajado anteriormente que ya era responsivo.

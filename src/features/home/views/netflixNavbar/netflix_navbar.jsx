@@ -11,13 +11,11 @@ import {
   NavbarMenu,
   NavbarMenuItem,
 } from "@nextui-org/react";
-import * as index from '../navbarItems/navbarItemBarrel/index.js';
-
+import * as index from "../navbarItems/navbarItemBarrel/index.js";
 
 // import {AcmeLogo} from "./AcmeLogo.jsx";
 
 export default function NetflixNavbar() {
-
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -60,14 +58,8 @@ export default function NetflixNavbar() {
         </NavbarContent>
 
         <NavbarContent justify="end">
-          <NavbarItem className="hidden lg:flex">
-            <Link href="#">Get User</Link>
-          </NavbarItem>
-          <NavbarItem>
-            <Button as={Link} color="primary" href="#" variant="flat">
-              Cerrar Sesión
-            </Button>
-          </NavbarItem>
+          <index.Notificaciones></index.Notificaciones>
+          <index.Perfil></index.Perfil>
         </NavbarContent>
         <NavbarMenu>
           {menuItems.map((item, index) => (

@@ -59,14 +59,14 @@ const HomeView = () => {
         title={"Upcoming Movies"}
       ></AppCarouselSection>
 
-      <AppCard 
+      {/* <AppCard 
       height="150px"
       width="300px"
       backgroundImageSrc={"https://picsum.photos/400/200?random=1"}>
         <AppCard.Header>HOLAA</AppCard.Header>
         <AppCard.Body>HOLAA</AppCard.Body>
         <AppCard.Footer>HOLAA</AppCard.Footer>
-      </AppCard>
+      </AppCard> */}
       {/* <h1>HOME</h1>
       <AppButton
       style={{

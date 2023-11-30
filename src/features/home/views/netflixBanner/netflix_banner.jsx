@@ -1,25 +1,7 @@
 import React from "react";
-// import {Image} from "@nextui-org/react";
-
-// export default function NetflixImage() {
-//   return (
-//     <Image
-//     isZoomed
-//       alt="NextUI hero Image"
-//       src="../public/netflix-background.png"
-//     />
-//   );
-// }
-
 import ReactPlayer from "react-player";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-  Link,
-} from "@nextui-org/react";
+import { NetflixNavbar } from "../homeViewBarrel";
+import { Button, Link } from '@nextui-org/react'
 
 const NetflixBanner = () => {
   const videos = [
@@ -31,22 +13,38 @@ const NetflixBanner = () => {
   const randomVideo = videos[Math.floor(Math.random() * videos.length)];
 
   return (
-    <section className="hero-section">
-      <ReactPlayer
-        muted={true}
-        playing={true}
-        controls={false}
-        autoplay={true}
-        width="100%"
-        height={440}
-        url={randomVideo}
-        objectFit="cover"
-      />
-      <h1
+    <>
+      <section
+        style={{
+          position: "relative",
+          paddingTop: "56.25%" /* Player ratio: 100 / (1280 / 720) */,
+          margin: "-100px 0 -180px 0",
+        }}
+      >
+        <ReactPlayer
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "0",
+          }}
+          muted={true}
+          playing={true}
+          controls={false}
+          autoplay={true}
+          width="100%"
+          height="100%"
+          objectFit="contain"
+          url={randomVideo}
+          modestbranding={true}
+          name={false}
+          watchLaterButton={false}
+          shareButton={false}
+        ></ReactPlayer>
+        <h1
         className="hero-title"
         style={{
           position: "absolute",
-          top: "50%",
+          top: "60%",
           left: "5%",
           // transform: "translate(-50%, -50%)",
           fontSize: "50px",
@@ -59,7 +57,7 @@ const NetflixBanner = () => {
       </h1>
       <Button style={{
           position: "absolute",
-          top: "60%",
+          top: "70%",
           left: "5%",}}
         as={Link}
         color="primary"
@@ -69,7 +67,8 @@ const NetflixBanner = () => {
       >
         Ver ahora
       </Button>
-    </section>
+      </section>
+    </>
   );
 };
 

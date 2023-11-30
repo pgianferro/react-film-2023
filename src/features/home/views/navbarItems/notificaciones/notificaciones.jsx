@@ -1,14 +1,18 @@
 import React from 'react'
-import { NavbarItem, Link} from "@nextui-org/react";
+import { NavbarItem, Image} from "@nextui-org/react";
 
 const Notificaciones = () => {
   return (
     <div>
-      <NavbarItem>
-        <Link color="foreground" href="/">
-        Notificaciones
-        </Link>
-      </NavbarItem>
+          <NavbarItem >
+            <Image
+              width={40}
+              alt="avatar image"
+              src="../public/netflix-notifications.png"
+              radius="sm"
+              style={{ cursor: 'pointer' }}
+            />
+          </NavbarItem>
     </div>
   )
 }

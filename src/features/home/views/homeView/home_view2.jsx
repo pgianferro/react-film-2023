@@ -3,7 +3,7 @@ import { useAuth } from "../../../auth/hook/use_auth.js";
 import { authApi } from "../../../../core/datasources/remote/auth/auth_api.js";
 import { Divider, Spacer } from '@nextui-org/react'
 import { NetflixBanner, NetflixCards, NetflixHeader, NetflixNavbar} from '../homeViewBarrel';
-
+import HomeView from "../../backup/home_view.jsx";
 export default function Homeview2() {
   const { logout } = useAuth();
 
@@ -13,18 +13,14 @@ export default function Homeview2() {
 
   return (
     <>
-      <div>
+      {/* <div>
         <h1>HOME</h1>
         <button onClick={getUser}>GET USER</button>
         <button onClick={logout}>Cerrar sesión</button>
-      </div>
-      <NetflixNavbar></NetflixNavbar>
+      </div> */}
+      <NetflixNavbar  ></NetflixNavbar>
       <NetflixBanner></NetflixBanner>
-      <Spacer y={10} ></Spacer>
-      <NetflixHeader></NetflixHeader>
-      <Divider className="my-4" />
-      {/* <NetflixCards></NetflixCards> */}
-      <NetflixCards></NetflixCards>
+      <HomeView></HomeView>
       <Spacer y={10} ></Spacer>
     </>
   );
