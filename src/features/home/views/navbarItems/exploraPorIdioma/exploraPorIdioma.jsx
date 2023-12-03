@@ -6,7 +6,7 @@ const ExploraPorIdioma = () => {
     <div>
       <NavbarItem>
         <Link color="foreground" href="/">
-          Explora por idioma
+          Por idioma
         </Link>
       </NavbarItem>
     </div>

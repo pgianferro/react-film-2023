@@ -6,7 +6,7 @@ const NovedadesPopulares = () => {
     <div>
       <NavbarItem>
         <Link color="foreground" href="/">
-        Novedades populares
+        Novedades
         </Link>
       </NavbarItem>
     </div>

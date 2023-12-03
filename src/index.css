@@ -82,3 +82,11 @@ swiper-container::part(button-prev),
 swiper-container::part(button-next) {
   color: red;
 }
+
+/* Perfil Avatar */
+.rounded-full {
+  border-radius: 5px;
+}
+.bg-default {
+  background-color: transparent
+}
