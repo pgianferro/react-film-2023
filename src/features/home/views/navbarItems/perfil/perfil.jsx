@@ -21,7 +21,7 @@ const Perfil = () => {
             color="secondary"
             name="Jason Hughes"
             size="sm"
-            src="../public/netflix-avatar.webp"
+            src="netflix-avatar.webp"
             // src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
           />
         </DropdownTrigger>

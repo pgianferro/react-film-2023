@@ -15,7 +15,7 @@ const Notificaciones = () => {
             // color="secondary"
             name="Jason Hughes"
             size="sm"
-            src="../public/netflix-notifications.png"
+            src="netflix-notifications.png"
             background-color="transparent"
           />
         </DropdownTrigger>

@@ -34,9 +34,13 @@ Agrandado full width y height, posicionamiento de fondo de la navbar y carrousel
 Trabajos sección Swiper:
 Se integró el componente trabajado en clase, pero también hay que trabajr el estilo de tablet y mobile. Y sino seguir con el componente de nextUI trabajado anteriormente que ya era responsivo.
 
-30/11/2023 Pablo: 
+02/12/2023 Pablo: 
 Trabajos en la Navbar:
 separado de componente logo y agregado a barril
 agregado de componente buscador y agregado a barril
 agregado de componente avatar con dropdown, edición del componente y agregado a barril
 Edición del dropdown de la izquierda
+
+03/12/2023 Pablo: 
+Corrección de rutas de imágenes para que se vean en el deploy de Vercel
+
