@@ -19,7 +19,7 @@ export default function NetflixNavbar() {
   return (
     <>
       <Navbar className="bg-[transparent]" onMenuOpenChange={setIsMenuOpen}>
-        <NavbarContent>
+        <NavbarContent >
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className="sm:hidden"

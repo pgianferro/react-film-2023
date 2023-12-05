@@ -20,7 +20,13 @@ export default function Homeview2() {
       </div> */}
       <NetflixNavbar  ></NetflixNavbar>
       <NetflixBanner></NetflixBanner>
-      <HomeView></HomeView>
+      {/* <HomeView></HomeView> */}
+      <NetflixHeader></NetflixHeader>
+      <NetflixCards></NetflixCards>
+      <NetflixHeader></NetflixHeader>
+      <NetflixCards></NetflixCards>
+      <NetflixHeader></NetflixHeader>
+      <NetflixCards></NetflixCards>
       <Spacer y={10} ></Spacer>
     </>
   );
