@@ -46,6 +46,16 @@ Corrección de rutas de imágenes para que se vean en el deploy de Vercel
 Corrección Error 404 en Vercel
 https://dev.to/stanlisberg/resolving-the-vercel-404-page-not-found-error-after-page-refresh-9b9#:~:text=To%20rectify%20the%20404%20Not,root%20directory%20of%20your%20project.
 
-03/12/2023 Pablo: 
+04/12/2023 Pablo: 
 Trabajos en el Banner:
 Responsividad Banner Header, Banner Subheader, Botón Play, Botón Info
+
+05/12/2023 Pablo: 
+Trabajos en el Banner:
+Botón Sound, Botón Restricted
+
+06/12/2023 Pablo: 
+Trabajos en el Carrousels
+Adaptación del Carousel con Next UI y la lógica del profesor, generación de los carrouseles de Películas y Series
+
+
