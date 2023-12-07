@@ -7,6 +7,8 @@ import NetflixBannerHeader from "./netflix_banner_header";
 import NetflixBannerSubHeader from "./netflix_banner_subheader";
 import NetflixBannerButtonPlay from "./netflix_banner_button_play";
 import NetflixBannerButtonInfo from "./netflix_banner_button_info";
+import NetflixBannerButtonSound from "./netflix_banner_button_sound";
+import NetflixBannerButtonRestricted from "./netflix_banner_button_restricted";
 
 
 const NetflixBanner = () => {
@@ -30,7 +32,7 @@ const NetflixBanner = () => {
           autoplay={true}
           width="100%"
           height="100%"
-          objectFit="cover"
+          objectfit="cover"
           url={randomVideo}
           modestbranding={true}
           name={false}
@@ -41,6 +43,8 @@ const NetflixBanner = () => {
         <NetflixBannerSubHeader></NetflixBannerSubHeader>
         <NetflixBannerButtonPlay></NetflixBannerButtonPlay>
         <NetflixBannerButtonInfo></NetflixBannerButtonInfo>
+        <NetflixBannerButtonSound></NetflixBannerButtonSound>
+        <NetflixBannerButtonRestricted></NetflixBannerButtonRestricted>
       </section>
     </>
   );
