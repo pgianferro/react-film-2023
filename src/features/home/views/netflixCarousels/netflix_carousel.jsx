@@ -105,7 +105,7 @@ const {removeFavorite, addFavorite, isFavorite} = useFavorites();
                     // color="primary"
                     // href="#"
                     // variant="flat"
-                    className="text-white bg-[#E50914]"
+                    className={isFavorite(e) ? "text-danger bg-[#FFFFFF]" : "text-white bg-[#E50914]"}
                     // radius="sm"
                     isIconOnly color="danger" aria-label="Like"
                     onClick={() => {

@@ -61,6 +61,14 @@ Adaptación del Carousel con Next UI y la lógica del profesor, generación de l
 07/12/2023 Pablo: 
 Trabajos en Carrousels
 Acortado de títulos para que no desborde la card y queden todas iguales (con substring)
-Funcionalidad Añadir a mi lista
+Funcionalidad Añadir a mi lista vía botón con ícono de corazón en la card
+
+08/12/2023 Pablo:
+Trabajos en la Navbar
+Funcionalidad de Añadidos a mi Lista en el menú "mi Lista" de la Navbar
+Trabajos en Carrousels
+Se modificó el ícono de corazón en la card para que al hacer click cambie de color y así se identifique que está seleccionado como favorito
+
+
 
 
