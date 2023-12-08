@@ -12,6 +12,7 @@ import {
 import useSWR from "swr";
 import AppCarouselSection from "../../../core/components/app_carousel_section/app_carousel_section";
 import AppCard from "../../../core/components/app_card/app_card";
+import { useFavorites } from "../../../core/hooks/useFavorites";
 
 const HomeView = () => {
   const { logout } = useAuth();
@@ -42,6 +43,8 @@ const HomeView = () => {
   } = useSWR("getUpcomingMovies", getUpcomingMovies);
   console.log(popularMovies);
 
+  const { favorites } = useFavorites();
+
   return (
     <div>
       <AppCarouselSection
@@ -57,6 +60,12 @@ const HomeView = () => {
       <AppCarouselSection
         data={upcomingMovies}
         title={"Upcoming Movies"}
+      ></AppCarouselSection>
+
+      <AppCarouselSection
+      key={`favorites-${favorites.length}`}
+        data={favorites}
+        title={"Favoritos"}
       ></AppCarouselSection>
 
       {/* <AppCard 

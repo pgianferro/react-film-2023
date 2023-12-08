@@ -58,4 +58,9 @@ Botón Sound, Botón Restricted
 Trabajos en el Carrousels
 Adaptación del Carousel con Next UI y la lógica del profesor, generación de los carrouseles de Películas y Series
 
+07/12/2023 Pablo: 
+Trabajos en Carrousels
+Acortado de títulos para que no desborde la card y queden todas iguales (con substring)
+Funcionalidad Añadir a mi lista
+
 

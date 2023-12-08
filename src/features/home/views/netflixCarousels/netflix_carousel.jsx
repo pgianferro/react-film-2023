@@ -25,8 +25,12 @@ import { Pagination } from "swiper/modules";
 import { Navigation } from "swiper/modules";
 import { AppSwiper } from "../../../../core/components/app_swiper/app_swiper";
 import AppSwiperSlide from "../../../../core/components/app_swiper/components/app_swiper_slide";
+import { useFavorites } from "../../../../core/hooks/useFavorites";
 
 const NetflixCarrousel = ({ title, data }) => {
+
+const {removeFavorite, addFavorite, isFavorite} = useFavorites();
+
   return (
     <>
       <h1 className="netflix-header">{title}</h1>
@@ -95,7 +99,7 @@ const NetflixCarrousel = ({ title, data }) => {
                   />
                 </CardBody>
                 <CardFooter className="text-small justify-between">
-                  <b>{e.title}</b>
+                  <b><b>{e.title.length > 30 ? `${e.title.substring(0,25)}...` : e.title}</b></b>
                   <Button
                     // as={Link}
                     // color="primary"
@@ -104,9 +108,17 @@ const NetflixCarrousel = ({ title, data }) => {
                     className="text-white bg-[#E50914]"
                     // radius="sm"
                     isIconOnly color="danger" aria-label="Like"
+                    onClick={() => {
+                      if(isFavorite(e)) {
+                        removeFavorite(e);
+                      } else {
+                        addFavorite(e);
+                      }
+                    }}
                   >
                     <HeartIcon />
                   </Button>
+                  
                   {/* <p className="text-default-500">{show.popularity}</p> */}
                 </CardFooter>
               </Card>

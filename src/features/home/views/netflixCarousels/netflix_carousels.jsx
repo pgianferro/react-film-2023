@@ -25,6 +25,8 @@ import {
 
 import useSWR from "swr";
 
+import { useFavorites } from "../../../../core/hooks/useFavorites";
+
 export default function NetflixCarousels() {
   const {
     data: popularMovies,
@@ -52,7 +54,7 @@ export default function NetflixCarousels() {
     error: popularShowsError,
     isLoading: popularShowsIsLoading,
   } = useSWR("getPopularShows", getPopularShows);
-  console.log("Popular Shows",popularShows);
+  console.log("Popular Shows", popularShows);
 
   const {
     data: topRatedShows,
@@ -68,8 +70,16 @@ export default function NetflixCarousels() {
   } = useSWR("getTopRatedShows", getAiringTodayShows);
   console.log(airingTodayShows);
 
+  const { favorites } = useFavorites();
+
   return (
     <>
+      <NetflixCarrousel
+        key={`favorites-${favorites.length}`}
+        data={favorites}
+        title={"Favoritos"}
+      ></NetflixCarrousel>
+
       <NetflixCarrousel
         data={popularMovies}
         title={"Películas populares"}
