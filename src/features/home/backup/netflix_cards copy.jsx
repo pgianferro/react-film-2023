@@ -87,6 +87,7 @@ export default function NetflixCards() {
 
   return (
     <>
+    
       <Swiper
         navigation={true}
         // slidesPerView={5}
@@ -127,8 +128,8 @@ export default function NetflixCards() {
                     width="100%"
                     alt={show.name}
                     className="w-full object-cover"
-                    src={`${"http://image.tmdb.org/t/p/w200"}${
-                      show.poster_path
+                    src={`${"http://image.tmdb.org/t/p/original"}${
+                      show.backdrop_path
                     }`}
                   />
                 </CardBody>

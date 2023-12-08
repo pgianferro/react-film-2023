@@ -1,8 +1,10 @@
 import React from 'react'
+import "../../../../index.css";
+
 
 const NetflixHeader = () => {
   return (
-    <h1>Series Más Populares</h1>
+    <h1 className="netflix-header">Nuevos Lanzamientos</h1>
   )
 }
 

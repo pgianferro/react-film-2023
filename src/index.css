@@ -26,8 +26,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* Estilos para swiper */
 
 #app {
@@ -71,14 +69,559 @@ body {
   object-fit: cover;
 }
 
-.swiper-button-prev, .swiper-button-next {
-  color: #E50914
-
+.swiper-button-prev,
+.swiper-button-next,
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: #e50914;
 }
-.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
-  display:none
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: none;
 }
 swiper-container::part(button-prev),
 swiper-container::part(button-next) {
   color: red;
+}
+
+/* Perfil Avatar */
+.rounded-full {
+  border-radius: 5px;
+}
+
+/* Notificaciones */
+.bg-default {
+  background-color: transparent;
+}
+
+/* Banner */
+.netflix-banner-header {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  /* transform: "translate(-50%, -50%)", */
+  font-size: 60px;
+  font-family: Helvetica Neue;
+  color: white;
+  font-weight: 700;
+  max-width: 500px;
+  line-height: 55px;
+  /* text-shadow: red 1px 0 10px; */
+  /* display: none; */
+}
+
+.netflix-banner-subheader {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  /* transform: "translate(-50%, -50%)", */
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  color: white;
+  font-weight: 300;
+  max-width: 500px;
+  line-height: 20px;
+  /* display: none; */
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Banner */
+
+  .banner-section {
+    position: relative;
+    padding-top: 56.25%;
+    /* margin: -100px 0 -45px 0; */
+    overflow: visible;
+  }
+  .banner-reactPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  /* Banner */
+.netflix-banner-header {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  /* transform: "translate(-50%, -50%)", */
+  font-size: 25px;
+  font-family: Helvetica Neue;
+  color: white;
+  font-weight: 700px;
+  max-width: 200px;
+  line-height: 25px;
+  /* display: none; */
+}
+
+.netflix-banner-subheader {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  /* transform: "translate(-50%, -50%)", */
+  font-size: 8px;
+  font-family: Helvetica Neue;
+  color: white;
+  font-weight: 300px;
+  max-width: 200px;
+  line-height: 10px;
+  display: none;
+}
+
+.netflix-banner-button-play {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color: #000;
+  background: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 1px 30px 1px 30px;
+  border-radius: 5px;
+}
+
+.netflix-banner-button-info {
+  position: absolute;
+  top: 55%;
+  left: 42%;
+  color: #fff;
+  background-color: rgba(109, 109, 110, 0.7);
+  font-size: 12px;
+  font-weight: 400;
+  padding: 1px 30px 1px 30px;
+  border-radius: 5px;
+}
+
+.netflix-banner-button-sound {
+  position: absolute; 
+  height: 50px;
+  width: 15px;
+  top: 5%;
+  left: 77%;
+}
+
+.netflix-banner-button-restricted {
+  position: absolute;
+  top: 29%;
+  left:80%;
+  color: #fff;
+  background-color: rgba(109, 109, 110, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+  padding: 0px 0px 0px 0px;
+  border-radius: 0px;
+  border-left-color: #FFF;
+  border-left-width: 2px;
+}
+
+  /* Movie Cards */
+
+  .netflix-header {
+    z-index: 10;
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Banner */
+
+  .banner-section {
+    position: relative;
+    padding-top: 56.25%;
+    /* margin: -10px 0 -75px 0; */
+    overflow: visible;
+  }
+  .banner-reactPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .netflix-banner-header {
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    /* transform: "translate(-50%, -50%)", */
+    font-size: 35px;
+    font-family: Helvetica Neue;
+    color: white;
+    font-weight: 700px;
+    max-width: 300px;
+    line-height: 33px;
+    /* display: none; */
+  }
+
+  .netflix-banner-subheader {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    /* transform: "translate(-50%, -50%)", */
+    font-size: 12px;
+    font-family: Helvetica Neue;
+    color: white;
+    font-weight: 300;
+    max-width: 300px;
+    line-height: 15px;
+  }
+
+  .netflix-banner-button-play {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: #000;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+  }
+
+  .netflix-banner-button-info {
+    position: absolute;
+    top: 70%;
+    left: 38%;
+    color: #fff;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+  }
+
+  .netflix-banner-button-sound {
+    position: absolute; 
+    height: 45px;
+    width: 10px;
+    top: 70%;
+    left: 77%;
+  }
+  
+  .netflix-banner-button-restricted {
+    position: absolute;
+    top: 70%;
+    left:88%;
+    color: #fff;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px 0px 0px 0px;
+    border-radius: 0px;
+    border-left-color: #FFF;
+    border-left-width: 2px;
+  }
+
+  /* Movie Cards */
+
+  .netflix-header {
+    z-index: 10;
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Banner */
+
+  .banner-section {
+    position: relative;
+    padding-top: 56.25%;
+    margin: -100px 0 -45px 0;
+    overflow: visible;
+  }
+  .banner-reactPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .netflix-banner-header {
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    /* transform: "translate(-50%, -50%)", */
+    font-size: 45px;
+    font-family: Helvetica Neue;
+    color: white;
+    font-weight: 700px;
+    max-width: 450px;
+    line-height: 40px;
+    /* display: none; */
+  }
+
+  .netflix-banner-subheader {
+    position: absolute;
+    top: 52%;
+    left: 5%;
+    /* transform: "translate(-50%, -50%)", */
+    font-size: 15px;
+    font-family: Helvetica Neue;
+    color: white;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 20px;
+    /* display: none; */
+  }
+
+  .netflix-banner-button-play {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+    color: #000;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+  }
+
+  .netflix-banner-button-info {
+    position: absolute;
+    top: 75%;
+    left: 31%;
+    color: #fff;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+  }
+
+  .netflix-banner-button-sound {
+    position: absolute; 
+    height: 45px;
+    width: 10px;
+    top: 75%;
+    left: 79%;
+  }
+  
+  .netflix-banner-button-restricted {
+    position: absolute;
+    top: 75%;
+    left:88%;
+    color: #fff;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 0px;
+    border-left-color: #FFF;
+    border-left-width: 2px;
+  }
+
+  /* Movie Cards */
+
+  .netflix-header {
+    z-index: 10;
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Banner */
+
+  .banner-section {
+    position: relative;
+    padding-top: 56.25%;
+    margin: -100px 0 -45px 0;
+    overflow: hidden;
+  }
+  .banner-reactPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .netflix-banner-header {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    /* transform: "translate(-50%, -50%)", */
+    font-size: 50px;
+    font-family: Helvetica Neue;
+    color: white;
+    font-weight: 700px;
+    max-width: 500px;
+    line-height: 45px;
+    /* display: none; */
+  }
+
+  .netflix-banner-subheader {
+    position: absolute;
+    top: 48%;
+    left: 5%;
+    /* transform: "translate(-50%, -50%)", */
+    font-size: 20px;
+    font-family: Helvetica Neue;
+    color: white;
+    font-weight: 300;
+    max-width: 500px;
+    line-height: 20px;
+    /* display: none; */
+  }
+
+  .netflix-banner-button-play {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    color: #000;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+  }
+
+  .netflix-banner-button-info {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    color: #fff;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 5px;
+  }
+
+  .netflix-banner-button-sound {
+    position: absolute; 
+    height: 45px;
+    width: 10px;
+    top: 70%;
+    left: 83%;
+  }
+  
+  .netflix-banner-button-restricted {
+    position: absolute;
+    top: 70%;
+    left:90%;
+    color: #fff;
+    background-color: rgba(109, 109, 110, 0.7);
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 40px 15px 40px;
+    border-radius: 0px;
+    border-left-color: #FFF;
+    border-left-width: 2px;
+  }
+
+  /* Movie Cards */
+
+  .netflix-header {
+    z-index: 10;
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Banner */
+
+  .banner-section {
+    position: relative;
+    padding-top: 56.25%;
+    margin: -100px 0 -225px 0;
+    overflow: hidden;
+  }
+  .banner-reactPlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Banner */
+.netflix-banner-header {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  /* transform: "translate(-50%, -50%)", */
+  font-size: 60px;
+  font-family: Helvetica Neue;
+  color: white;
+  font-weight: 700;
+  max-width: 500px;
+  line-height: 55px;
+  /* text-shadow: red 1px 0 10px; */
+  /* display: none; */
+}
+
+.netflix-banner-subheader {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  /* transform: "translate(-50%, -50%)", */
+  font-size: 20px;
+  font-family: Helvetica Neue;
+  color: white;
+  font-weight: 300;
+  max-width: 500px;
+  line-height: 20px;
+  /* display: none; */
+}
+
+.netflix-banner-button-play {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  color: #000;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 40px 15px 40px;
+  border-radius: 5px;
+}
+
+.netflix-banner-button-info {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  color: #fff;
+  background-color: rgba(109, 109, 110, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 40px 15px 40px;
+  border-radius: 5px;
+}
+
+.netflix-banner-button-sound {
+  position: absolute; 
+  height: 45px;
+  width: 10px;
+  top: 55%;
+  left: 88%;
+}
+
+.netflix-banner-button-restricted {
+  position: absolute;
+  top: 55%;
+  left:93%;
+  color: #fff;
+  background-color: rgba(109, 109, 110, 0.7);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 15px 40px 15px 40px;
+  border-radius: 0px;
+  border-left-color: #FFF;
+  border-left-width: 2px;
+}
+
+  /* Movie Cards */
+
+  .netflix-header {
+    z-index: 10;
+    position: relative;
+    font-weight: bold;
+    font-size: 2em;
+  }
 }

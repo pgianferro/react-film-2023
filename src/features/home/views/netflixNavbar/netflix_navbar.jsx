@@ -1,16 +1,5 @@
 import React from "react";
-import {
-  Image,
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  Link,
-  Button,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-} from "@nextui-org/react";
+import {Navbar, NavbarBrand, NavbarContent, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar, Image} from "@nextui-org/react";
 import * as index from "../navbarItems/navbarItemBarrel/index.js";
 
 // import {AcmeLogo} from "./AcmeLogo.jsx";
@@ -25,27 +14,17 @@ export default function NetflixNavbar() {
     "Novedades populares",
     "Mi lista",
     "Explora por idiomas",
-    "Perfil",
-    "Notificaciones",
   ];
 
   return (
     <>
-      <Navbar onMenuOpenChange={setIsMenuOpen}>
-        <NavbarContent>
+      <Navbar className="bg-[transparent]" onMenuOpenChange={setIsMenuOpen}>
+        <NavbarContent >
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             className="sm:hidden"
           />
-          <NavbarBrand>
-            <Image
-              width={100}
-              alt="NextUI hero Image"
-              src="../public/netflix-logo.png"
-            />
-            {/* <AcmeLogo/> */}
-            {/* <p className="font-bold text-inherit">ACME</p> */}
-          </NavbarBrand>
+          <index.Logo></index.Logo>
         </NavbarContent>
 
         <NavbarContent className="hidden sm:flex gap-4" justify="center">
@@ -56,11 +35,11 @@ export default function NetflixNavbar() {
           <index.MiLista></index.MiLista>
           <index.ExploraPorIdioma></index.ExploraPorIdioma>
         </NavbarContent>
-
-        <NavbarContent justify="end">
-          <index.Notificaciones></index.Notificaciones>
-          <index.Perfil></index.Perfil>
-        </NavbarContent>
+        <NavbarContent as="div" className="items-center" justify="end">
+        <index.Buscador></index.Buscador>
+        <index.Notificaciones></index.Notificaciones>
+        <index.Perfil></index.Perfil>
+      </NavbarContent>
         <NavbarMenu>
           {menuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>

@@ -33,3 +33,42 @@ Trabajos Sección Banner:
 Agrandado full width y height, posicionamiento de fondo de la navbar y carrousel de series. Agregado de Título y Botón. Resta trabajar estilos para tablet y mobile.
 Trabajos sección Swiper:
 Se integró el componente trabajado en clase, pero también hay que trabajr el estilo de tablet y mobile. Y sino seguir con el componente de nextUI trabajado anteriormente que ya era responsivo.
+
+02/12/2023 Pablo: 
+Trabajos en la Navbar:
+separado de componente logo y agregado a barril
+agregado de componente buscador y agregado a barril
+agregado de componente avatar con dropdown, edición del componente y agregado a barril
+Edición del dropdown de la izquierda
+
+03/12/2023 Pablo: 
+Corrección de rutas de imágenes para que se vean en el deploy de Vercel
+Corrección Error 404 en Vercel
+https://dev.to/stanlisberg/resolving-the-vercel-404-page-not-found-error-after-page-refresh-9b9#:~:text=To%20rectify%20the%20404%20Not,root%20directory%20of%20your%20project.
+
+04/12/2023 Pablo: 
+Trabajos en el Banner:
+Responsividad Banner Header, Banner Subheader, Botón Play, Botón Info
+
+05/12/2023 Pablo: 
+Trabajos en el Banner:
+Botón Sound, Botón Restricted
+
+06/12/2023 Pablo: 
+Trabajos en el Carrousels
+Adaptación del Carousel con Next UI y la lógica del profesor, generación de los carrouseles de Películas y Series
+
+07/12/2023 Pablo: 
+Trabajos en Carrousels
+Acortado de títulos para que no desborde la card y queden todas iguales (con substring)
+Funcionalidad Añadir a mi lista vía botón con ícono de corazón en la card
+
+08/12/2023 Pablo:
+Trabajos en la Navbar
+Funcionalidad de Añadidos a mi Lista en el menú "mi Lista" de la Navbar
+Trabajos en Carrousels
+Se modificó el ícono de corazón en la card para que al hacer click cambie de color y así se identifique que está seleccionado como favorito
+
+
+
+

@@ -5,7 +5,7 @@ export default function Netflixloginviewbg() {
         <div
             className="bg-cover bg-center w-full h-full absolute z-0 opacity-75"
             style={{
-                backgroundImage: `url('../public/NetflixBG.jpeg')`, // Reemplaza con la ruta correcta de tu imagen
+                backgroundImage: `url('NetflixBG.jpeg')`, // Reemplaza con la ruta correcta de tu imagen
             }}
         ></div>
     );

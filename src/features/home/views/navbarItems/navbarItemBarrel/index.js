@@ -6,3 +6,5 @@ export { default as MiLista } from '../miLista/miLista.jsx';
 export { default as ExploraPorIdioma } from '../exploraPorIdioma/exploraPorIdioma.jsx';
 export { default as Notificaciones } from '../notificaciones/notificaciones.jsx';
 export { default as Perfil } from '../perfil/perfil.jsx';
+export { default as Buscador } from '../buscador/buscador.jsx'
+export { default as Logo } from '../logo/logo.jsx'
