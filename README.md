@@ -5,7 +5,6 @@
 * Integrantes:
 Lucas Nicolás Burghi Murayama
 Pablo Daniel Gianferro
-Agustín Carlos Lort
 
 * Descripción: Esta app será un símil Netflix en el marco del Trabajo Grupal del curso React de Codo a Codo.
 
@@ -30,15 +29,7 @@ Agustín Carlos Lort
     Env Variables and Modes
     https://vitejs.dev/guide/env-and-mode.html
 
-* API
-    https://developer.themoviedb.org/docs 
-    Username: pgianferro
-    Pass: reactfilm2023
-
-* Para hacer forms
-https://formik.org/
-
-*Todo lo realizado al momento
+* Todo lo realizado al momento
 
 CREAMOS EL PROYECTO DE REACT CON VITE
 INSTALAMOS LAS DEPENDENCIAS DE TESTING
@@ -53,4 +44,13 @@ CONFIGURAMOS EL PROYECTO EN VERCEL (CREANDO 3 DOMINIOS Y EVITANDO EL AUTO DEPLOY
 CONFIGURAMOS LAS VARIABLES DE ENTORNO EN GITHUB
 CREAMOS LA CARPETA .GITHUB y LOS PIPELINES PARA LAS ACTIONS
 IGUALAMOS LOS REPOSITORIOS EN TODOS LOS ENTORNOS PARA QUE ESTEN IGUALES
+=========
+* API
+    https://developer.themoviedb.org/docs 
+    Username: pgianferro
+    Pass: reactfilm2023
 
+* Para hacer forms
+
+https://formik.org/
+>>>>>>>>> Temporary merge branch 2
