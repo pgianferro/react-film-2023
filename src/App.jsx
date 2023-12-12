@@ -9,24 +9,11 @@ registerSwiper();
 
 const App = () => {
   return (
-<<<<<<<<< Temporary merge branch 1
-    <div>
-<<<<<<<<< Temporary merge branch 1
-      <h1>App React Film</h1>
-      <h2>ESTO ES QA</h2>
-=========
-      <NetflixNavbar></NetflixNavbar>
-      <NetflixImage></NetflixImage>
-      <Spacer y={10} ></Spacer>
-      <NetflixHeader></NetflixHeader>
-      <Divider className="my-4" />
-      <NetflixCards></NetflixCards>
-      <Spacer y={10} ></Spacer>
->>>>>>>>> Temporary merge branch 2
-      </div>
-=========
-    <div>App React Film 2023</div>
->>>>>>>>> Temporary merge branch 2
+    <>
+    <RootProvider>
+      <RouterProvider router={appRouter}/>
+    </RootProvider>
+    </>
   )
 }
 
