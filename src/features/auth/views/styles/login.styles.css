@@ -1,0 +1,10 @@
+/* styles.css */
+
+.visible {
+    display: block !important; /* Usa !important para asegurarte de que esta regla tenga prioridad */
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
