@@ -6,3 +6,4 @@ export { default as Compon5 } from '../comp5/Compon5';
 export { default as Compon6 } from '../comp6/Compon6';
 export { default as Compon7 } from '../comp7/Compon7';
 export { default as Compon8 } from '../comp8/Compon8';
+export { default as Language } from '../language/Language';

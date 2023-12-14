@@ -8,23 +8,18 @@ import Netflixloginviewbg from './netflix-loginview-bg';
 import Remember from './button/options/remember';
 import Footer from './footer/Footer';
 import "../styles/login.styles.css";
+/* import InfoComponents from './information/informationpart/InfoComponents'; */
 
 const LoginView2 = () => {
   const { login } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [footerClass, setFooterClass] = useState('footer-container hidden');
 
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 0);
+    setFooterClass(window.scrollY > 0 ? 'footer-container visible' : 'footer-container hidden');
   };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   const handleSubmit = async (e) => {
     // ... (sin cambios)
@@ -66,11 +61,10 @@ const LoginView2 = () => {
           </div>
         </div>
       </div>
-
       {/* Sección inferior, información extra. */}
-      <div className={isScrolled ? 'footer-container visible' : 'footer-container hidden'}>
-        <Footer/>
+      <div>
       </div>
+      <Footer />
     </div>
   );
 };
