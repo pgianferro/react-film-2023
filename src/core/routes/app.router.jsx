@@ -5,6 +5,7 @@ import LoginView from "../../features/auth/views/login/login_view";
 import LoginView2 from "../../features/auth/views/login/login_view2";
 import PrivateRoute from "../../features/auth/components/private_route";
 import PublicRoute from "../../features/auth/components/public_route";
+import ContentDetail from "../../features/home/views/netflixCarousels/netflix_content_detail";
 
 //createBrowserRouter es una función que le va a decir a mi app de React que utilice la API nativa del navegador para las rutas.
 export const appRouter = createBrowserRouter([
@@ -13,9 +14,10 @@ export const appRouter = createBrowserRouter([
     path: "/",
     element: (
       <PrivateRoute>
-        {//      <HomeView />
-        } 
-        <HomeView2/>
+        {
+          //      <HomeView />
+        }
+        <HomeView2 />
       </PrivateRoute>
     ),
   },
@@ -23,16 +25,21 @@ export const appRouter = createBrowserRouter([
     path: "/login",
     element: (
       <PublicRoute>
-        {//      <LoginView />
-        } 
+        {
+          //      <LoginView />
+        }
         <LoginView2 />
       </PublicRoute>
     ),
   },
   {
-    path: "*",
+    path: "/content/:id",
     element: (
-      <div>No se encontró la página</div>
-      ),
+        <ContentDetail />
+    ),
+  },
+  {
+    path: "*",
+    element: <div>No se encontró la página</div>,
   },
 ]);

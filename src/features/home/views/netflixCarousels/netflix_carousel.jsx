@@ -1,16 +1,10 @@
 import React from "react";
 
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Image,
-  Button,
-  Link,
-} from "@nextui-org/react";
+import { Card, CardBody, CardFooter, Image, Button, Modal, ModalContent, ModalHeader, ModalBody, ModalFooter, useDisclosure} from "@nextui-org/react";
 
-import {HeartIcon} from './HeartIcon';
+import { Link } from "react-router-dom";
 
+import { HeartIcon } from "./HeartIcon";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -27,9 +21,9 @@ import { AppSwiper } from "../../../../core/components/app_swiper/app_swiper";
 import AppSwiperSlide from "../../../../core/components/app_swiper/components/app_swiper_slide";
 import { useFavorites } from "../../../../core/hooks/useFavorites";
 
-const NetflixCarrousel = ({ title, data }) => {
 
-const {removeFavorite, addFavorite, isFavorite} = useFavorites();
+const NetflixCarrousel = ({ title, data }) => {
+  const { removeFavorite, addFavorite, isFavorite } = useFavorites();
 
   return (
     <>
@@ -87,29 +81,46 @@ const {removeFavorite, addFavorite, isFavorite} = useFavorites();
                 onPress={() => console.log("item pressed")}
               >
                 <CardBody className="overflow-visible p-0">
-                  <Image
-                    shadow="sm"
-                    radius="lg"
-                    width="100%"
-                    alt={e.title}
-                    className="w-full object-cover"
-                    src={`${"http://image.tmdb.org/t/p/original"}${
-                      e.backdrop
-                    }`}
-                  />
+                  <Link
+                    to={`/content/${e.id}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Image
+                      shadow="sm"
+                      radius="lg"
+                      width="100%"
+                      alt={e.title}
+                      className="w-full object-cover"
+                      src={`${"http://image.tmdb.org/t/p/original"}${
+                        e.backdrop
+                      }`}
+                    />
+                  </Link>
                 </CardBody>
                 <CardFooter className="text-small justify-between">
-                  <b><b>{e.title.length > 30 ? `${e.title.substring(0,25)}...` : e.title}</b></b>
+                  <b>
+                    <b>
+                      {e.title.length > 30
+                        ? `${e.title.substring(0, 25)}...`
+                        : e.title}
+                    </b>
+                  </b>
                   <Button
                     // as={Link}
                     // color="primary"
                     // href="#"
                     // variant="flat"
-                    className={isFavorite(e) ? "text-danger bg-[#FFFFFF]" : "text-white bg-[#E50914]"}
+                    className={
+                      isFavorite(e)
+                        ? "text-danger bg-[#FFFFFF]"
+                        : "text-white bg-[#E50914]"
+                    }
                     // radius="sm"
-                    isIconOnly color="danger" aria-label="Like"
+                    isIconOnly
+                    color="danger"
+                    aria-label="Like"
                     onClick={() => {
-                      if(isFavorite(e)) {
+                      if (isFavorite(e)) {
                         removeFavorite(e);
                       } else {
                         addFavorite(e);
@@ -118,7 +129,7 @@ const {removeFavorite, addFavorite, isFavorite} = useFavorites();
                   >
                     <HeartIcon />
                   </Button>
-                  
+
                   {/* <p className="text-default-500">{show.popularity}</p> */}
                 </CardFooter>
               </Card>
@@ -126,7 +137,6 @@ const {removeFavorite, addFavorite, isFavorite} = useFavorites();
           ))}
         </div>
       </Swiper>
-
     </>
   );
 };

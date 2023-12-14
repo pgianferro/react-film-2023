@@ -81,21 +81,6 @@ export default function NetflixCarousels() {
       ></NetflixCarrousel>
 
       <NetflixCarrousel
-        data={popularMovies}
-        title={"Películas populares"}
-      ></NetflixCarrousel>
-
-      <NetflixCarrousel
-        data={topRatedMovies}
-        title={"Películas mejor puntuadas"}
-      ></NetflixCarrousel>
-
-      <NetflixCarrousel
-        data={upcomingMovies}
-        title={"Películas a estrenar"}
-      ></NetflixCarrousel>
-
-      <NetflixCarrousel
         data={popularShows}
         title={"Series populares"}
       ></NetflixCarrousel>
@@ -108,6 +93,21 @@ export default function NetflixCarousels() {
       <NetflixCarrousel
         data={airingTodayShows}
         title={"Series transmitiendo hoy"}
+      ></NetflixCarrousel>
+      
+      <NetflixCarrousel
+        data={popularMovies}
+        title={"Películas populares"}
+      ></NetflixCarrousel>
+
+      <NetflixCarrousel
+        data={topRatedMovies}
+        title={"Películas mejor puntuadas"}
+      ></NetflixCarrousel>
+
+      <NetflixCarrousel
+        data={upcomingMovies}
+        title={"Películas a estrenar"}
       ></NetflixCarrousel>
     </>
   );
