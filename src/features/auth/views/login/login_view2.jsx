@@ -6,7 +6,7 @@ import ButtonTest from "./button/loginbutton/buttonTest";
 import Suscbutton from '../../../suscription/suscbutton/suscbutton';
 import Netflixloginviewbg from './netflix-loginview-bg';
 import Remember from './button/options/remember';
-import Footer from './footer/Footer';
+import Footer from './footer/footer';
 import "../styles/login.styles.css";
 /* import InfoComponents from './information/informationpart/InfoComponents'; */
 
