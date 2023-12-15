@@ -65,7 +65,7 @@ const ContentDetail = ({ match }) => {
         <p>{movie.overview}</p>
         <Button
     as={Link}
-    color="primary"
+    color="danger"
     href="/"
     variant="flat"
   >Volver
