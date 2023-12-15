@@ -225,6 +225,24 @@ swiper-container::part(button-next) {
   }
 }
 
+/* Detail Content */
+
+/* ContentDetail.css */
+
+.content-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 50px 20px 50px;
+  padding-bottom: 250px;
+  padding-top: 50px;
+}
+
+.center-content {
+  text-align: justify;
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   /* Banner */
@@ -239,7 +257,6 @@ swiper-container::part(button-next) {
     position: absolute;
     top: 0;
     left: 0;
-    
   }
 
   .netflix-banner-header {
@@ -323,6 +340,23 @@ swiper-container::part(button-next) {
     font-weight: bold;
     font-size: 2em;
   }
+   /* Detail Content */
+
+/* ContentDetail.css */
+
+.content-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 100px 20px 100px;
+  padding-bottom: 250px;
+  padding-top: 50px;
+}
+
+.center-content {
+  text-align: justify;
+}
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -423,6 +457,23 @@ swiper-container::part(button-next) {
     font-weight: bold;
     font-size: 2em;
   }
+   /* Detail Content */
+
+/* ContentDetail.css */
+
+.content-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 200px 20px 200px;
+  padding-bottom: 250px;
+  padding-top: 50px;
+}
+
+.center-content {
+  text-align: justify;
+}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -523,6 +574,24 @@ swiper-container::part(button-next) {
     font-weight: bold;
     font-size: 2em;
   }
+
+   /* Detail Content */
+
+/* ContentDetail.css */
+
+.content-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 300px 20px 300px;
+  padding-bottom: 250px;
+  padding-top: 50px;
+}
+
+.center-content {
+  text-align: justify;
+}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -625,4 +694,23 @@ swiper-container::part(button-next) {
     font-weight: bold;
     font-size: 2em;
   }
+
+  /* Detail Content */
+
+/* ContentDetail.css */
+
+.content-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 400px 20px 400px;
+  padding-bottom: 250px;
+  padding-top: 50px;
+}
+
+.center-content {
+  text-align: justify;
+}
+
 }
