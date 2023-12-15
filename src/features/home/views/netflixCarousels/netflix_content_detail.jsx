@@ -2,7 +2,7 @@ import { NetflixNavbar } from "../homeViewBarrel";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
-import { Image, Button, Link } from "@nextui-org/react";
+import { Image, Button, Link, Spacer } from "@nextui-org/react";
 import "../../../../index.css";
 
 const ContentDetail = ({ match }) => {
@@ -49,7 +49,7 @@ const ContentDetail = ({ match }) => {
 
   return (
     <>
-      <NetflixNavbar></NetflixNavbar>
+      {/* <NetflixNavbar></NetflixNavbar> */}
       <div className="content-detail-container">
         <div className="center-content">
           <Image
@@ -62,8 +62,11 @@ const ContentDetail = ({ match }) => {
               movie.backdrop_path
             }`}
           />
+          <Spacer y={10}></Spacer>
           <h1>{movie.name}</h1>
+          <Spacer y={10}></Spacer>
           <p>{movie.overview}</p>
+          <Spacer y={10}></Spacer>
           <Button as={Link} color="danger" href="/" variant="flat">
             Volver
           </Button>
