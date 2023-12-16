@@ -94,7 +94,7 @@ export default function NetflixCarousels() {
         data={airingTodayShows}
         title={"Series transmitiendo hoy"}
       ></NetflixCarrousel>
-
+      
       <NetflixCarrousel
         data={popularMovies}
         title={"Películas populares"}

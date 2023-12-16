@@ -69,6 +69,19 @@ Funcionalidad de Añadidos a mi Lista en el menú "mi Lista" de la Navbar
 Trabajos en Carrousels
 Se modificó el ícono de corazón en la card para que al hacer click cambie de color y así se identifique que está seleccionado como favorito
 
+14/12/2023 Pablo:
+Trabajos en Carrousels y Cards: armado de vista individual de contenido y linkeo vía API
+
+15/12/2023 Pablo:
+General: Corrección para correcto deploy
+
+16/12/2023 Pablo:
+Trabajos en Carrousels y Cards:
+Corrección en el linkeo a vista individual para que haga fetch de shows o de movies dependiendo del parámetro type agregado en la url para diferenciar una card de movie o una de show.
+Trabajos en Navbar: se agregó lógica de link también en los items de Mi lista.
+
+
+
 
 
 
