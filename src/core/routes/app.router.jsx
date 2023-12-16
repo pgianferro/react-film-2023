@@ -33,7 +33,7 @@ export const appRouter = createBrowserRouter([
     ),
   },
   {
-    path: "/content/:id",
+    path: "/content/:type/:id",
     element: (
         <ContentDetail />
     ),

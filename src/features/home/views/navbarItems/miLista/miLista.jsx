@@ -1,4 +1,5 @@
 import React from "react";
+import { Link as RouterLink } from "react-router-dom";
 import {
   NavbarItem,
   Link,
@@ -7,6 +8,7 @@ import {
   DropdownTrigger,
   DropdownMenu,
   DropdownItem,
+  Button,
 } from "@nextui-org/react";
 import { useFavorites } from "../../../../../core/hooks/useFavorites";
 
@@ -36,12 +38,17 @@ const MiLista = () => {
               key={e.id}
               // description="ACME scales apps to meet user demand, automagically, based on load."
             >
-              <div className="flex items-center gap-2">
-                <Avatar
-                  src={`${"http://image.tmdb.org/t/p/original"}${e.backdrop}`}
-                ></Avatar>
-                {e.title}
-              </div>
+              <RouterLink
+                to={`/content/${e.type}/${e.id}`}
+                style={{ textDecoration: "none" }}
+              >
+                <div className="flex items-center gap-2">
+                  <Avatar
+                    src={`${"http://image.tmdb.org/t/p/original"}${e.backdrop}`}
+                  ></Avatar>
+                  {e.title}
+                </div>
+              </RouterLink>
             </DropdownItem>
           ))}
         </DropdownMenu>

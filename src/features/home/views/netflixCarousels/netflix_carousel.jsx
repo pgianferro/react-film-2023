@@ -28,24 +28,6 @@ const NetflixCarrousel = ({ title, data }) => {
   return (
     <>
       <h1 className="netflix-header">{title}</h1>
-      {/* <AppSwiper>
-        {data?.map((e) => (
-          <AppSwiperSlide key={e.id}>
-            <div
-              style={{
-                height: "150px",
-                width: "250px",
-                backgroundImage:`url(${e.backdrop})`,
-                backgroundSize: "contain",
-                backgroundRepeat:"no-repeat",
-                backgroundPosition:"center"
-              }}
-            >
-              <h3>{e.title}</h3>
-            </div>
-          </AppSwiperSlide>
-        ))}
-      </AppSwiper> */}
 
       <Swiper
         navigation={true}
@@ -82,7 +64,7 @@ const NetflixCarrousel = ({ title, data }) => {
               >
                 <CardBody className="overflow-visible p-0">
                   <Link
-                    to={`/content/${e.id}`}
+                    to={`/content/${e.type}/${e.id}`}
                     style={{ textDecoration: "none" }}
                   >
                     <Image
