@@ -1,7 +1,7 @@
 // components/FooterStyles.js
- 
+
 import styled from "styled-components";
- 
+
 export const Box = styled.div`
     padding: 5% 2.5%;
     background: black;
@@ -13,7 +13,7 @@ export const Box = styled.div`
         // padding: 70px 30px;
     }
 `;
- 
+
 export const FooterContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -22,14 +22,14 @@ export const FooterContainer = styled.div`
     margin: 0 auto;
     /* background: red; */
 `;
- 
+
 export const Column = styled.div`
     display: flex;
     flex-direction: column;
     text-align: left;
     margin-left: 60px;
 `;
- 
+
 export const Row = styled.div`
     display: grid;
     grid-template-columns: repeat(
@@ -45,7 +45,7 @@ export const Row = styled.div`
         );
     }
 `;
- 
+
 export const FooterLink = styled.a`
     color: #fff;
     margin-bottom: 20px;
@@ -57,10 +57,11 @@ export const FooterLink = styled.a`
         transition: 200ms ease-in;
     }
 `;
- 
+
 export const Heading = styled.p`
     font-size: 24px;
     color: #fff;
     margin-bottom: 40px;
     font-weight: bold;
 `;
+

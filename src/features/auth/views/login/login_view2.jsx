@@ -16,10 +16,19 @@ const LoginView2 = () => {
   const [error, setError] = useState(null);
   const [footerClass, setFooterClass] = useState('footer-container hidden');
 
+  const [isScrolled, setIsScrolled] = useState(false);
   const handleScroll = () => {
     setIsScrolled(window.scrollY > 0);
-    setFooterClass(window.scrollY > 0 ? 'footer-container visible' : 'footer-container hidden');
   };
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
+  
+
 
   const handleSubmit = async (e) => {
     // ... (sin cambios)
@@ -64,7 +73,7 @@ const LoginView2 = () => {
       {/* Sección inferior, información extra. */}
       <div>
       </div>
-      <Footer />
+      <Footer isScrolled={isScrolled} />
     </div>
   );
 };

@@ -13,10 +13,11 @@ import {
   Heading,
 } from "./footer.styles";
 
-const Footer = () => {
+const Footer = ({ isScrolled }) => {
   return (
     <Box>
-      <FooterContainer>
+      <FooterContainer className={isScrolled ? 'visible' : 'hidden'}>
+
         <Row>
 
           {/* Primera Columna */}
