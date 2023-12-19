@@ -1,5 +1,6 @@
 // components/FooterStyles.js
 
+import { Container } from "postcss";
 import styled from "styled-components";
 
 export const Box = styled.div`
@@ -12,6 +13,10 @@ export const Box = styled.div`
     @media (max-width: 1000px) {
         // padding: 70px 30px;
     }
+`;
+/* Agregar una transición para suavizar el efecto. */
+export const thisfooter = styled.div`
+  transition: bottom 0.3s ease-out; 
 `;
 
 export const FooterContainer = styled.div`

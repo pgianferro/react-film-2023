@@ -80,6 +80,9 @@ Trabajos en Carrousels y Cards:
 Corrección en el linkeo a vista individual para que haga fetch de shows o de movies dependiendo del parámetro type agregado en la url para diferenciar una card de movie o una de show.
 Trabajos en Navbar: se agregó lógica de link también en los items de Mi lista.
 
+18-12-23 Lucas:
+Estuve trabajando varios días en el footer del loginview2, sigo teniendo problemas para lograr que aparezca solo cuando scrolleas.
 
-
+18-12-23 Lucas:
+Me olvidé de hacer el registro de los cambios implementados la semana pasada. Perdón.
 

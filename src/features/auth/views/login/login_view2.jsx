@@ -14,30 +14,35 @@ const LoginView2 = () => {
   const { login } = useAuth();
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [footerClass, setFooterClass] = useState('footer-container hidden');
-
-  const [isScrolled, setIsScrolled] = useState(false);
-  const handleScroll = () => {
-    setIsScrolled(window.scrollY > 0);
-  };
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
   
-  
-
-
   const handleSubmit = async (e) => {
     // ... (sin cambios)
   };
 
+  // Estado para controlar la visibilidad del footer al hacer scroll
+  const [showFooter, setShowFooter] = useState(false);
+
+  useEffect(() => {
+    // Agregar un event listener para el evento de scroll
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      // Mostrar el footer cuando el usuario ha hecho suficiente scroll
+      setShowFooter(scrollPosition > 200);
+    };
+
+    // Agregar el event listener al montar el componente
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpiar el event listener al desmontar el componente
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="relative h-screen flex flex-col">
+    <>
       {/* Sección superior */}
-      <div className="relative flex-grow">
+      <div className='h-screen'>
         <Netflixloginviewbg />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="bg-stone-950 p-8 rounded-md shadow-md w-96 bg-opacity-90">
@@ -72,9 +77,10 @@ const LoginView2 = () => {
       </div>
       {/* Sección inferior, información extra. */}
       <div>
+        {/* Renderizar el Footer solo si showFooter es true */}
+        <Footer />
       </div>
-      <Footer isScrolled={isScrolled} />
-    </div>
+    </>
   );
 };
 

@@ -1,5 +1,5 @@
 // components/Footer.js
-import React from "react";
+import React, { useEffect, useState } from "react";
 /* import InfoComponents from "../information/informationpart/InfoComponents"; */
 import "../../styles/login.styles.css";
 import { Compon1, Compon2, Compon3, Compon4, Compon5, Compon6, Compon7, Compon8, Language } from "../information/barril/index";
@@ -13,10 +13,10 @@ import {
   Heading,
 } from "./footer.styles";
 
-const Footer = ({ isScrolled }) => {
+const Footer = () => {
   return (
     <Box>
-      <FooterContainer className={isScrolled ? 'visible' : 'hidden'}>
+      <FooterContainer className="thisfooter">
 
         <Row>
 
